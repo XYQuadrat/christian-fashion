@@ -6,7 +6,19 @@
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body
+		data-sveltekit-preload-data="hover"
+		class="text-zinc-800 bg-zinc-50"
+		style="
+			min-height: 100vh;
+			background: linear-gradient(
+				20deg,
+				rgba(255, 237, 190, 0.2) 34.83%,
+				rgba(255, 237, 190, 0.5) 57.53%,
+				rgb(255, 188, 195, 0.5) 90.17%
+			);
+		"
+	>
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

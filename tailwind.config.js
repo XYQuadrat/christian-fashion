@@ -2,7 +2,14 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		extend: {},
+		fontFamily: {
+			display: ['Inter V'],
+			serif: ['"Source Serif 4 Variable"']
+		},
+		container: {
+			center: true
+		}
 	},
 	plugins: []
 };
