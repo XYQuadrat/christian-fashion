@@ -1,0 +1,13 @@
+when:
+  - event: push
+    branch: main
+
+steps:
+  - name: build
+    image: docker.io/node:20
+    commands:
+      - npm ci
+      - npm run build
+      - cp -TR build /tmp/output
+    volumes:
+      - /srv/gospelgarments:/tmp/output
