@@ -67,7 +67,7 @@
 </script>
 
 {#if error !== null}
-	{error}
+	{error} when fetching API
 {:else}
 	<div
 		class="full min-w-full flex flex-row justify-between items-center sticky bg-zinc-50/95 top-0 border-b border-zinc-800 z-10"
