@@ -39,7 +39,7 @@
 		};
 
 		try {
-			const res = await fetch('http://localhost:1337/api/brands?populate=*', {
+			const res = await fetch('http://fashion.xyquadrat.ch/data/api/brands?populate=*', {
 				method: 'GET',
 				headers: {
 					'Content-Type': 'application/json'
@@ -92,7 +92,8 @@
 					<div class="flex-none md:w-64 md:h-full h-64 relative p-3 pr-0">
 						{#if brand.attributes.Covers.data != null}
 							<img
-								src="http://localhost:1337{brand.attributes.Covers.data[0].attributes.url}"
+								src="http://fashion.xyquadrat.ch/data{brand.attributes.Covers.data[0].attributes
+									.url}"
 								class="inset-0 w-full h-full object-cover"
 								alt="Cover image for {brand.attributes.Name}"
 							/>
@@ -102,7 +103,7 @@
 					<div class="flex flex-col flex-auto md:px-6 px-4 py-6">
 						{#if brand.attributes.Logo.data != null}
 							<img
-								src="http://localhost:1337{brand.attributes.Logo.data.attributes.url}"
+								src="http://fashion.xyquadrat.ch/data{brand.attributes.Logo.data.attributes.url}"
 								class="md:h-8 h-16 mb-4 self-center brightness-0"
 								alt="Logo of {brand.attributes.Name}"
 							/>
