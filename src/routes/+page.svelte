@@ -39,7 +39,7 @@
 		};
 
 		try {
-			const res = await fetch('http://fashion.xyquadrat.ch/data/api/brands?populate=*', {
+			const res = await fetch('https://fashion.xyquadrat.ch/data/api/brands?populate=*', {
 				method: 'GET',
 				headers: {
 					'Content-Type': 'application/json'
@@ -67,7 +67,7 @@
 </script>
 
 {#if error !== null}
-	{error} when fetching API
+	{error}
 {:else}
 	<div
 		class="full min-w-full flex flex-row justify-between items-center sticky bg-zinc-50/95 top-0 border-b border-zinc-800 z-10"
@@ -92,7 +92,7 @@
 					<div class="flex-none md:w-64 md:h-full h-64 relative p-3 pr-0">
 						{#if brand.attributes.Covers.data != null}
 							<img
-								src="http://fashion.xyquadrat.ch/data{brand.attributes.Covers.data[0].attributes
+								src="https://fashion.xyquadrat.ch/data{brand.attributes.Covers.data[0].attributes
 									.url}"
 								class="inset-0 w-full h-full object-cover"
 								alt="Cover image for {brand.attributes.Name}"
@@ -103,7 +103,7 @@
 					<div class="flex flex-col flex-auto md:px-6 px-4 py-6">
 						{#if brand.attributes.Logo.data != null}
 							<img
-								src="http://fashion.xyquadrat.ch/data{brand.attributes.Logo.data.attributes.url}"
+								src="https://fashion.xyquadrat.ch/data{brand.attributes.Logo.data.attributes.url}"
 								class="md:h-8 h-16 mb-4 self-center brightness-0"
 								alt="Logo of {brand.attributes.Name}"
 							/>
