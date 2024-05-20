@@ -89,7 +89,7 @@
 		<div class="grid full min-w-full grid-cols-1 xl:grid-cols-2 gap-2 my-4">
 			{#each brands as brand, i}
 				<div class="flex md:flex-row flex-col min-h-96 m-2 border border-zinc-600 bg-slate-50">
-					<div class="flex-none md:w-64 md:h-full h-64 relative p-3 pr-0">
+					<div class="flex-none md:w-64 md:h-full h-64 relative md:p-3 pr-0">
 						{#if brand.attributes.Covers.data != null}
 							<img
 								src="https://fashion.xyquadrat.ch/data{brand.attributes.Covers.data[0].attributes
