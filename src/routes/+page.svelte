@@ -79,7 +79,7 @@
 				style="text-decoration-thickness: 4px;">garments</span
 			>
 		</h1>
-		<a href="#">
+		<a href="mailto:mail@xyquadrat.ch">
 			<button class="border-zinc-500 border p-2 font-display font-light mr-4 hover:bg-zinc-300">
 				Brand vorschlagen
 			</button>
@@ -93,7 +93,7 @@
 						{#if brand.attributes.Covers.data != null}
 							<img
 								src="https://fashion.xyquadrat.ch/data{brand.attributes.Covers.data[0].attributes
-									.url}"
+									.formats.medium.url}"
 								class="inset-0 w-full h-full object-cover"
 								alt="Cover image for {brand.attributes.Name}"
 							/>
@@ -123,7 +123,7 @@
 						<div class="flex justify-between items-center content-center">
 							{#if brand.attributes.Link != null}
 								<a
-									class="relative z-10 bg-indigo-500 hover:bg-indigo-600 font-semibold text-white px-4 py-3 inline-flex items-center content-center"
+									class="relative z-0 bg-indigo-500 hover:bg-indigo-600 font-semibold text-white px-4 py-3 inline-flex items-center content-center"
 									href={brand.attributes.Link}
 									target="_blank"
 								>
