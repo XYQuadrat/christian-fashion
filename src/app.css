@@ -1,3 +1,25 @@
+@font-face {
+	font-family: 'Inter V';
+	src: url('InterVariable.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Inter V';
+	src: url('InterVariable-Italic.woff2') format('woff2');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Source Serif 4 Variable';
+	src: url('SourceSerif4Variable_Roman.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Source Serif 4 Variable';
+	src: url('SourceSerif4Variable_Italic.woff2') format('woff2');
+	font-style: italic;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

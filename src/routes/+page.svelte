@@ -110,7 +110,7 @@
 						{/if}
 						<div class="flex items-center">
 							<h1
-								class="flex-auto md:text-4xl text-3xl font-serif font-extralight tracking-tight text-black text-center"
+								class="flex-auto md:text-4xl text-3xl font-serif font-bold tracking-tight text-black text-center"
 							>
 								{brand.attributes.Name}
 							</h1>
