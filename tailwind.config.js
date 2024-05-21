@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {},
 		fontFamily: {
-			display: ['Inter V'],
+			display: ['"Inter Variable"'],
 			serif: ['"Source Serif 4 Variable"']
 		},
 		container: {
